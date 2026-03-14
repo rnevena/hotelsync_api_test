@@ -12,28 +12,36 @@ uputstvo za pokretanje:
 odnosno, prilikom pokretanja skripti, podaci će se povlačiti sa mog demo naloga. kredencijali i token su konfigurisani u okviru config/config.php
 2. *za task 2 - reservation import koristiti opseg datuma --from=2026-03-01 --to=2026-03-31 jer su demo rezervacije kreirane u trenutku otvaranja demo naloga ( od 12. marta )*
 
+```
 > struktura projekta
 
 hotelsync_api/
-  config/
-      config.php              # konfiguracija aplikacije (API tokeni, kredencijali itd.)
-  lib/
-      api.php                 # helper za slanje API request-a
-      db.php                  # konekcija na bazu i osnovne DB funkcije
-  helpers/
-      helpers.php             # pomoćne funkcije (slugify, logging, itd.)
-  scripts/
-      sync_catalog.php        # task #1 – authentication / catalog sync
-      sync_reservations.php   # task #2 – reservation import
-      update_reservation.php  # task #3 – reservation update / cancel
-      generate_invoice.php    # task #4 – invoice creation
-  webhook/
-      otasync.php             # task #5 – webhook endpoint za insert/update/cancel rezervacija
-  sql/
-      dbscript.txt            # SQL skripta za kreiranje baze i tabela
-  logs/
-      app.log                 # log fajl aplikacije
-      
-  hotelsync_api.postman_collection.json  # Postman kolekcija za testiranje endpointa + neki od hotelsync test api servisa
+│
+├─ config/
+│   └─ config.php        # konfiguracija aplikacije (API tokeni, kredencijali itd.)
+│
+├─ lib/
+│   ├─ api.php           # helper za slanje API request-a
+│   └─ db.php            # konekcija na bazu i osnovne DB funkcije
+│
+├─ helpers/
+│   └─ helpers.php       # pomoćne funkcije (slugify, logging, itd.)
+│
+├─ scripts/
+│   ├─ sync_catalog.php        # task #1 – authentication / catalog sync
+│   ├─ sync_reservations.php   # task #2 – reservation import
+│   ├─ update_reservation.php  # task #3 – reservation update / cancel
+│   └─ generate_invoice.php    # task #4 – invoice creation
+│
+├─ webhook/
+│   └─ otasync.php       # task #5 – webhook endpoint za insert/update/cancel rezervacija
+│
+├─ sql/
+│   └─ dbscript.txt      # SQL skripta za kreiranje baze i tabela
+│
+├─ logs/
+│   └─ app.log           # log fajl aplikacije
+│
+└─ hotelsync_api.postman_collection.json  # Postman kolekcija za testiranje endpointa + neki od servisa iz hotelsync public api koji su korišćeni
 
-
+```
