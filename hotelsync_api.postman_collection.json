@@ -1,0 +1,619 @@
+{
+  "info": {
+    "_postman_id": "d5676c6c-5524-4380-a011-0e62b7c2b8bd",
+    "name": "hotelsync_api",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53156500",
+    "_collection_link": "https://go.postman.co/collection/53156500-d5676c6c-5524-4380-a011-0e62b7c2b8bd?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "otasync test",
+      "item": [
+        {
+          "name": "rooms",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
+              },
+              {
+                "key": "Accept",
+                "value": "*/*"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "en-US,en;q=0.9"
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer 0f7780d37285a8b8ad8cfc98bd8b4314c7adf826"
+              },
+              {
+                "key": "X-Requested-With",
+                "value": "XMLHttpRequest"
+              },
+              {
+                "key": "Origin",
+                "value": "https://app.otasync.me"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Referer",
+                "value": "https://app.otasync.me/en/?"
+              },
+              {
+                "key": "Cookie",
+                "value": "device_id=0be49aae-05c5-46ba-99e0-d9eef2be5dcf; intercom-id-nqu28wus=aa033eec-ce08-40fa-90a5-b88d2846aba7; intercom-session-nqu28wus=TmIvNTBkb3ZVOFM3cTVaQ3htcHlramp3Y3N4TWpBNG9pTjM3TDRJZE9Fbk4wbHhWT290SWNUVGdmS1V0RitLM0t0RGRObWhmYWtGdzBSdkh2dkpPOEJtQlMwdHA5Q1RkS3JJRGV1MnhLUVdXUzNaQUttR1JHZHRqNkFOS0pHZGR5OVB2dCtiRk5obFMySFRJaTE2aUZ4VkYveWYwcmt0TEQxRG1mNFAwTEszY0NuVUN0a0xPTG5Od0gxOWI5bUIwcGc5Q2k3N1I1UFRyL0tSK0E2NWZSR0gyck1QZ0xIeDd3dkN2a2NiNzlpeW9wd3VWOFlmQjJubjFqUVJNYXRvLy0tQk5Pb21DVC8vSFN0dXc2NmdIWmlUdz09--3a7a4c6ba839e26634d3d8d24ebf9923911fe498; intercom-device-id-nqu28wus=2219785d-c175-44aa-aed9-97956fcd7869; lang=en; key=0f7780d37285a8b8ad8cfc98bd8b4314c7adf826"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "same-origin"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id_properties\":\"10614\",\"key\":\"0f7780d37285a8b8ad8cfc98bd8b4314c7adf826\",\"type\":1,\"details\":0}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://app.otasync.me/api/room/data/rooms",
+              "protocol": "https",
+              "host": [
+                "app",
+                "otasync",
+                "me"
+              ],
+              "path": [
+                "api",
+                "room",
+                "data",
+                "rooms"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "extras",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
+              },
+              {
+                "key": "Accept",
+                "value": "*/*"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "en-US,en;q=0.9"
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer 0f7780d37285a8b8ad8cfc98bd8b4314c7adf826"
+              },
+              {
+                "key": "X-Requested-With",
+                "value": "XMLHttpRequest"
+              },
+              {
+                "key": "Origin",
+                "value": "https://app.otasync.me"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Referer",
+                "value": "https://app.otasync.me/en/?"
+              },
+              {
+                "key": "Cookie",
+                "value": "device_id=0be49aae-05c5-46ba-99e0-d9eef2be5dcf; intercom-id-nqu28wus=aa033eec-ce08-40fa-90a5-b88d2846aba7; intercom-session-nqu28wus=TmIvNTBkb3ZVOFM3cTVaQ3htcHlramp3Y3N4TWpBNG9pTjM3TDRJZE9Fbk4wbHhWT290SWNUVGdmS1V0RitLM0t0RGRObWhmYWtGdzBSdkh2dkpPOEJtQlMwdHA5Q1RkS3JJRGV1MnhLUVdXUzNaQUttR1JHZHRqNkFOS0pHZGR5OVB2dCtiRk5obFMySFRJaTE2aUZ4VkYveWYwcmt0TEQxRG1mNFAwTEszY0NuVUN0a0xPTG5Od0gxOWI5bUIwcGc5Q2k3N1I1UFRyL0tSK0E2NWZSR0gyck1QZ0xIeDd3dkN2a2NiNzlpeW9wd3VWOFlmQjJubjFqUVJNYXRvLy0tQk5Pb21DVC8vSFN0dXc2NmdIWmlUdz09--3a7a4c6ba839e26634d3d8d24ebf9923911fe498; intercom-device-id-nqu28wus=2219785d-c175-44aa-aed9-97956fcd7869; lang=en; key=0f7780d37285a8b8ad8cfc98bd8b4314c7adf826"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "same-origin"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id_properties\":\"10614\",\"key\":\"0f7780d37285a8b8ad8cfc98bd8b4314c7adf826\",\"get_categories\":1}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://app.otasync.me/api/extras/data/extras",
+              "protocol": "https",
+              "host": [
+                "app",
+                "otasync",
+                "me"
+              ],
+              "path": [
+                "api",
+                "extras",
+                "data",
+                "extras"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "pricing plans",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
+              },
+              {
+                "key": "Accept",
+                "value": "*/*"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "en-US,en;q=0.9"
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer 0f7780d37285a8b8ad8cfc98bd8b4314c7adf826"
+              },
+              {
+                "key": "X-Requested-With",
+                "value": "XMLHttpRequest"
+              },
+              {
+                "key": "Origin",
+                "value": "https://app.otasync.me"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Referer",
+                "value": "https://app.otasync.me/en/?"
+              },
+              {
+                "key": "Cookie",
+                "value": "device_id=0be49aae-05c5-46ba-99e0-d9eef2be5dcf; intercom-id-nqu28wus=aa033eec-ce08-40fa-90a5-b88d2846aba7; intercom-session-nqu28wus=TmIvNTBkb3ZVOFM3cTVaQ3htcHlramp3Y3N4TWpBNG9pTjM3TDRJZE9Fbk4wbHhWT290SWNUVGdmS1V0RitLM0t0RGRObWhmYWtGdzBSdkh2dkpPOEJtQlMwdHA5Q1RkS3JJRGV1MnhLUVdXUzNaQUttR1JHZHRqNkFOS0pHZGR5OVB2dCtiRk5obFMySFRJaTE2aUZ4VkYveWYwcmt0TEQxRG1mNFAwTEszY0NuVUN0a0xPTG5Od0gxOWI5bUIwcGc5Q2k3N1I1UFRyL0tSK0E2NWZSR0gyck1QZ0xIeDd3dkN2a2NiNzlpeW9wd3VWOFlmQjJubjFqUVJNYXRvLy0tQk5Pb21DVC8vSFN0dXc2NmdIWmlUdz09--3a7a4c6ba839e26634d3d8d24ebf9923911fe498; intercom-device-id-nqu28wus=2219785d-c175-44aa-aed9-97956fcd7869; lang=en; key=0f7780d37285a8b8ad8cfc98bd8b4314c7adf826"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "same-origin"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"token\": \"775580f2b13be0215b5aee08a17c7aa892ece321\",\n    \"key\": \"0f7780d37285a8b8ad8cfc98bd8b4314c7adf826\",\n    \"id_properties\": 10614\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://app.otasync.me/api/pricingPlan/data/pricing_plans",
+              "protocol": "https",
+              "host": [
+                "app",
+                "otasync",
+                "me"
+              ],
+              "path": [
+                "api",
+                "pricingPlan",
+                "data",
+                "pricing_plans"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "boards",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"token\": \"775580f2b13be0215b5aee08a17c7aa892ece321\",\n    \"key\": \"0f7780d37285a8b8ad8cfc98bd8b4314c7adf826\",\n    \"id_properties\": 10614\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://app.otasync.me/api/boards/data/boards",
+              "protocol": "https",
+              "host": [
+                "app",
+                "otasync",
+                "me"
+              ],
+              "path": [
+                "api",
+                "boards",
+                "data",
+                "boards"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "reservations",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
+              },
+              {
+                "key": "Accept",
+                "value": "*/*"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "en-US,en;q=0.9"
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer 0f7780d37285a8b8ad8cfc98bd8b4314c7adf826"
+              },
+              {
+                "key": "X-Requested-With",
+                "value": "XMLHttpRequest"
+              },
+              {
+                "key": "Origin",
+                "value": "https://app.otasync.me"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Referer",
+                "value": "https://app.otasync.me/en/?"
+              },
+              {
+                "key": "Cookie",
+                "value": "device_id=0be49aae-05c5-46ba-99e0-d9eef2be5dcf; intercom-id-nqu28wus=aa033eec-ce08-40fa-90a5-b88d2846aba7; intercom-session-nqu28wus=ZEtnRmozOEFzTzU1MzFLVFdIaHNrdm9TemhOTmozTHg1V3VsenJobkN2ZkpJa0VWbHZOeU5IU0RhNWw1OGMwZDFwblgvMEVQUVJpajA4YjNvMzgwU2hWQzVLelozbm52bUlzUURhUVpsVVl4NVRrdzJyMnpYQTQ3Y1o4QjZVNFdxbW8vcUxzd3lnWmdMSFFZYXEyaUtuWVI3c1dPVXJLUFNJNFJqRHpWVkEyb1lGQzM1bUs2WjVTYXJ3ZmhsZzd0VThTQUZ0Y3k1ZCtsTkdhQ3FNMGRQS0xPOXdUTGNuS25wYi8vdEg3dmhiTFRKV2ZCSitna1NlclhFZU5lVGpZay0tcVQxV2VUNWFnUkU4RHN4b0RjNlM5Zz09--d0306dd8b5fabc283a7551ff6d09e323379bc3af; intercom-device-id-nqu28wus=2219785d-c175-44aa-aed9-97956fcd7869; lang=en; key=0f7780d37285a8b8ad8cfc98bd8b4314c7adf826"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "same-origin"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"key\":\"0f7780d37285a8b8ad8cfc98bd8b4314c7adf826\",\"id_properties\":\"10614\",\"search\":\"\",\"page\":1,\"show_rooms\":1,\"show_nights\":1,\"timezone_offset\":-1,\"status\":\"0\",\"offer_expiring\":\"0\",\"arrivals\":0,\"departures\":0,\"dfrom\":\"2026-02-12\",\"dto\":\"2026-03-14\",\"min_nights\":\"\",\"max_nights\":\"\",\"min_price\":\"\",\"max_price\":\"\",\"rooms\":[],\"channels\":[],\"countries\":[],\"filter_by\":\"date_received\",\"order_by\":\"date_received\",\"order_type\":\"desc\",\"pricing_plans\":[],\"promo_codes\":[],\"view_type\":\"reservations\",\"contigents\":[],\"companies\":[],\"multiple_properties\":\"0\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://app.otasync.me/api/reservation/data/reservations",
+              "protocol": "https",
+              "host": [
+                "app",
+                "otasync",
+                "me"
+              ],
+              "path": [
+                "api",
+                "reservation",
+                "data",
+                "reservations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "reservation",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
+              },
+              {
+                "key": "Accept",
+                "value": "*/*"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "en-US,en;q=0.9"
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer 0f7780d37285a8b8ad8cfc98bd8b4314c7adf826"
+              },
+              {
+                "key": "X-Requested-With",
+                "value": "XMLHttpRequest"
+              },
+              {
+                "key": "Origin",
+                "value": "https://app.otasync.me"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Referer",
+                "value": "https://app.otasync.me/en/?"
+              },
+              {
+                "key": "Cookie",
+                "value": "device_id=0be49aae-05c5-46ba-99e0-d9eef2be5dcf; intercom-id-nqu28wus=aa033eec-ce08-40fa-90a5-b88d2846aba7; intercom-session-nqu28wus=NTBsTjhmVnFlR1MyS25jOS9BbEplVWxmOHBSZ2Z2b3p6MTVoZWY1VmUrR3NlUjd3a3kxaWFUalU4RkpVTWZTVXlUd2ExQXFSKzRVeEI5N29JUkIwa1Y3NjlkYk5NRkthVVRRZVhpOThhcVlEK2U5cFlHTHZlWS95ZnptN0JWOFk1T1JVbHdwaHJNR1dJdlNGblhYd1g1WldRN3h5UWZrQmdOSXJsVXNMOEpab0xRRVg2OVFOeXNTUi9MR1M0Ukg4UUs2d1lrTndLNzJUdWIzK1pHQVQzV2pENGc1YTBxNG5UK3NUSlMwbWpCRk5LWGRSOFA1eEhwOXlPSVVTY0pSVy0tOEFRRXhsNXBoV0pWZkdhNmk5ZFl3Zz09--f0570d5da1a1ce27483dc69259b2e95b57d91196; intercom-device-id-nqu28wus=2219785d-c175-44aa-aed9-97956fcd7869; lang=en; key=0f7780d37285a8b8ad8cfc98bd8b4314c7adf826"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "same-origin"
+              },
+              {
+                "key": "Priority",
+                "value": "u=0"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"key\":\"0f7780d37285a8b8ad8cfc98bd8b4314c7adf826\",\"id_properties\":\"10614\",\"id_reservations\":\"2703478\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://app.otasync.me/api/reservation/data/reservation",
+              "protocol": "https",
+              "host": [
+                "app",
+                "otasync",
+                "me"
+              ],
+              "path": [
+                "api",
+                "reservation",
+                "data",
+                "reservation"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "webhook",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"dfrom\":\"2026-03-01\",\r\n \"dto\":\"2026-03-31\",\r\n \"task\":\"insert\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1/hotelsync_api/webhook/otasync.php",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "path": [
+            "hotelsync_api",
+            "webhook",
+            "otasync.php"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "insert body",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"dfrom\":\"2026-03-01\",\r\n \"dto\":\"2026-03-31\",\r\n \"task\":\"insert\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1/hotelsync_api/webhook/otasync.php",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "hotelsync_api",
+                "webhook",
+                "otasync.php"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "update/cancel body",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"reservation_id\":2700208,\r\n \"task\":\"update\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1/hotelsync_api/webhook/otasync.php",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "hotelsync_api",
+                "webhook",
+                "otasync.php"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    }
+  ]
+}
